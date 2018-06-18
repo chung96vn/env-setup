@@ -1,4 +1,4 @@
-# Create By chung6vn
+# Create by chung6vn
 
 ## Step 1: Setup environment
 ```bash
