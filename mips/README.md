@@ -28,6 +28,7 @@ gdb-multiarch
 ```
 > in pwndbg
 ```bash
+set endian big
 set architecture mips
 target remote localhost:1234
 ```
