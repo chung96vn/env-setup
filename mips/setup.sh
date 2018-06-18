@@ -4,12 +4,16 @@
 
 sudo apt-get update
 sudo apt-get install git -y
+sudo apt-get install pip -y
 
 # setup pwndbg
 cd /tmp
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
+
+# setup pwntools
+sudo pip install pwntools
 
 # setup qemu
 sudo apt-get install qemu -y
