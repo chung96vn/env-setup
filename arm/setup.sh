@@ -7,7 +7,8 @@ sudo apt-get install git -y
 sudo apt-get install pip -y
 
 # setup pwndbg
-cd /tmp
+mkdir ~/setup
+cd ~/setup
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
