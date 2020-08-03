@@ -24,6 +24,6 @@ sudo apt-get install qemu-user-static -y
 sudo apt-get install gcc-arm-linux-gnueabihf -y
 sudo apt-get install gdb-multiarch -y
 
-#  make symbolic links
-sudo ln -s /usr/arm-linux-gnueabihf/lib/libc-2.23.so /lib/libc.so.6
-sudo ln -s /usr/arm-linux-gnueabihf/lib/ld-linux-armhf.so.3 /lib/ld-linux-armhf.so.3
+#  export LD_LIBRARY_PATH
+echo -e "\nexport LD_LIBRARY_PATH=/usr/arm-linux-gnueabihf/lib/" >> ~/.bashrc
+source ~/.bashrc
