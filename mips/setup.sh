@@ -24,6 +24,6 @@ sudo apt-get install qemu-user-static -y
 sudo apt-get install gcc-mips-linux-gnu -y
 sudo apt-get install gdb-multiarch -y
 
-#  make symbolic links
-sudo ln -s /usr/mips-linux-gnu/lib/libc-2.23.so /lib/libc.so.6
-sudo ln -s /usr/mips-linux-gnu/lib/ld.so.1 /lib/ld.so.1
+#  export LD_LIBRARY_PATH
+echo -e "\nexport LD_LIBRARY_PATH=LD_LIBRARY_PATH:/usr/mips-linux-gnu/lib/" >> ~/.bashrc
+source ~/.bashrc
